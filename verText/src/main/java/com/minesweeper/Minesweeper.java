@@ -10,7 +10,7 @@ public class Minesweeper {
         int mineCount = 10;
 
         int[][] mineMap = new int[height + 2][width + 2];
-        Random randNum = new Random(1);
+        Random randNum = new Random();
         int[] nonOverlappingNum = new int[mineCount];
         for (int i = 0; i < mineCount; i++) {
             nonOverlappingNum[i] = randNum.nextInt(width * height);
